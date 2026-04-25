@@ -14,7 +14,7 @@ body {
   padding: 20px;
 }
 body {
-  background-image: url('Bg_img.jpeg');
+  background-image: url("Bg_img.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

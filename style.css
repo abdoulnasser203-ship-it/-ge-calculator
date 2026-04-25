@@ -13,7 +13,12 @@ body {
   justify-content: center;
   padding: 20px;
 }
-
+body {
+  background-image: url('Bg_img.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,800&display=swap');
 
 .section {

@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,800&display=swap');
+
+.section {
+  background-color: #ffffff;
+  border-radius: 20px 20px 100px 20px;
+  padding: 50px 40px 60px 40px;
+  width: 100%;
+  max-width: 480px;
+}
+
+.sous-section {
+  display: flex;
+  gap: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #8a8a8a;
+  text-transform: uppercase;
+}
+
+.label.error {
+  color: #ff5959;
+}
+
+.input {
+  padding: 12px 16px;
+  border: 1.5px solid #dbdbdb;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  color: #141414;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: #dbdbdb;
+  font-weight: 400;
+}
+
+.input:hover {
+  border-color: #854dff;
+}
+
+.input:focus {
+  border-color: #854dff;
+}
+
+.input.error {
+  border-color: #ff5959;
+}
+
+.error-msg {
+  font-size: 11px;
+  font-style: italic;
+  color: #ff5959;
+  min-height: 16px;
+}
+
+/* partie 2 */
+.transition {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin:0;
+}
+
+.ligne {
+  position: absolute;
+  width: 100%;
+  border: none;
+  border-top: 1.5px solid #dbdbdb;
+  left: 0;
+}
+
+.btn-calculate {
+  position: relative;
+  z-index: 1;
+  background-color: #854dff;
+  border: none;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.btn-calculate:hover {
+  background-color: #141414;
+}
+
+/* partie 3 */
+.sous-section_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.resulta {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  line-height: 1.1;
+}
+
+.number {
+  font-size: 72px;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.purple {
+  color: #854dff;
+}
+
+.word {
+  font-size: 68px;
+  font-weight: 800;
+  font-style: italic;
+  color: #141414;
+}
+
+/* responsive */
+@media (max-width: 480px) {
+  .section {
+    padding: 35px 24px 50px 24px;
+    border-radius: 16px 16px 80px 16px;
+  }
+
+  .sous-section {
+    gap: 12px;
+  }
+
+  .input {
+    font-size: 16px;
+    padding: 10px 12px;
+  }
+
+  .number {
+    font-size: 52px;
+  }
+
+  .word {
+    font-size: 48px;
+  }
+
+  .btn-calculate {
+    width: 56px;
+    height: 56px;
+  }
+
+  .sous-section_1 {
+    justify-content: center;
+  }
+}

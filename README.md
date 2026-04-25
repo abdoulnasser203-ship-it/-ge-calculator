@@ -14,10 +14,8 @@ Un projet simple de calcul d'âge en HTML, CSS et JavaScript pur.
 ```
 age-calculator/
 ├── index.html        → Page principale
-├── css/
-│   └── style.css     → Tous les styles
-├── js/
-│   └── app.js        → Toute la logique JavaScript
+├── style.css     → Tous les styles
+├── app.js        → Toute la logique JavaScript
 └── README.md         → Ce fichier
 ```
 
